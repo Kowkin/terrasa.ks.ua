@@ -1,0 +1,177 @@
+.light-nav {
+	a {
+		color: antiquewhite;
+	}
+	padding-top: 5vh;
+}
+
+
+/*!
+ * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+// Reset and dependencies
+@import "normalize";
+@import "print";
+// Core CSS
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+// Components
+@import "animation";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "pager";
+@import "labels";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "responsive-embed";
+@import "close";
+// Components w/ JavaScript
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+// Utility classes
+@import "utilities";
+@import "utilities-background";
+@import "utilities-spacing";
+@import "utilities-responsive";
+.big-menu {
+	font-size: 1.7rem;
+	vertical-align: middle;
+	margin-top: -.5rem;
+}
+
+.subheading {
+	font-style: italic;
+	margin-bottom: -25px;
+}
+
+.heading {
+	line-height: 1;
+	margin-top: -5wpx;
+}
+
+.logo {
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 40vh;
+	//	or 
+	//	top:50%
+	//    left: 50%;
+	//    -webkit-transform: translateX(-50%) translateY(-50%);
+	//    transform: translateX(-50%) translateY(-50%);
+}
+
+.light {
+	color: antiquewhite;
+}
+
+.center-vertical {
+	flex-direction: column;
+	display: flex!important;
+	align-items: center;
+	justify-content: center;
+}
+
+.divider {
+	width: 5vw;
+	border: 2.5px solid #aca2c5;
+	margin-bottom: 13px;
+	margin-top: 13px;
+}
+
+.text-center {
+	text-align: center
+}
+
+.text-header {
+	@include center-block();
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.text-content {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 0.8rem;
+}
+
+.border-content {
+	border: 2px dotted #d9d3e7;
+	padding: 40px;
+	height: 19rem;
+	margin: 1rem;
+}
+
+.img_zakaz {
+	background: url(/img/_MG_0723.jpg) no-repeat;
+	background-size: cover;
+	height: 21rem;
+}
+
+.section {
+	background: url(/img/_MG_0184.jpg)100% 100% no-repeat;
+	background-size: cover;
+	height: 110vh;
+}
+
+.section1 {
+	margin-top: -10vh;
+	margin-bottom: -10vh;
+}
+
+.section2 {
+	background: url(/img/meal.jpg)no-repeat;
+	background-size: cover;
+	height: 110vh;
+}
+
+.section3 {
+	margin-top: -10vh;
+	margin-bottom: -10vh;
+	.img_chef {
+		background: url(/img/_MG_0723.jpg) no-repeat;
+		background-size: cover;
+		height: 21rem;
+	}
+}
+.section4 {
+	background: url(/img/section4.jpg)no-repeat;
+	background-size: cover;
+	height: 110vh;
+}
+.fix-dotted {
+	background: white;
+}
+
+.text-content-light {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 0.8rem;
+	color: antiquewhite;
+	margin-top: 5px;
+}
