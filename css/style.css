@@ -6322,3 +6322,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   color: antiquewhite;
   margin-top: 5px;
 }
+
+.subheading-values {
+  font-style: italic;
+}
