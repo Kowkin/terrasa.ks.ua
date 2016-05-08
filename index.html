@@ -14,16 +14,13 @@
 	<script>
 		$(document).ready(function () {
 			$("#preLoader").fakeLoader({
-				timeToHide: 700, //Time in milliseconds for fakeLoader disappear
+				timeToHide: 1000, //Time in milliseconds for fakeLoader disappear
 				zIndex: "999", //Default zIndex
-				spinner: "spinner4", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+				spinner: "spinner6", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
 				bgColor: "#6d6aa1", //Hex, RGB or RGBA colors
 			});
 			$('.carousel').carousel({
 				interval: false
-			});
-			$(document).on('click', '#moveTo', function () {
-				$.fn.fullpage.moveTo('products');
 			});
 		});
 	</script>
@@ -116,18 +113,51 @@
 				<h6 class="subheading-values">полный комплекс услуг</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</div>
 		</div>
 	</div>
-	<div class="section5 container">
-		<h1 class="heading display-1 text-center">Меню</h1>
-		<div class="divider center-block"></div>
-		<h6 class="subheading text-center">апператив</h6>
-		<div class="row">
-			<div class="col-sm-6"></div>
-			<div class="col-sm-6"></div>
+	
+	<div class="section5">
+		<div class="carousel-wrapper">
+			<a href="#carousel" role="button" data-slide="prev">
+				<i aria-hidden="true"></i>
+				<span>prev</span>
+			</a>
+			<a href="#carousel" role="button" data-slide="next">
+				<i aria-hidden="true"></i>
+				<span>next
+				</span>
+			</a>
 		</div>
+		<div id="carousel" class="carousel slide center" data-ride="carousel">
 			<div class="row">
-				<div class="col-sm-6"></div>
-				<div class="col-sm-6"></div>
+				<h1 class="col-sm-4 col-sm-offset-4 heading display-1 text-center fix-menu">Меню</h1>
 			</div>
+			<div class="divider center-block"></div>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner container-fluid" role="listbox">
+
+				<div class="carousel-item active">
+					<h6 class="subheading text-center">апператив</h6>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4 class="food-name text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+							<span class="food-desc"></span>
+							<span class="price"></span>
+						</div>
+						<div class="col-sm-6"></div>
+					</div>
+				</div>
+				
+				<div class="carousel-item">
+					<h6 class="subheading text-center">первые блюда</h6>
+					<div class="row">
+						<div class="col-sm-6"></div>
+						<div class="col-sm-6"></div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
 </body>
 
 </html>

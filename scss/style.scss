@@ -57,6 +57,8 @@
 @import "utilities-background";
 @import "utilities-spacing";
 @import "utilities-responsive";
+
+@import "fakeloader";
 .big-menu {
 	font-size: 1.7rem;
 	vertical-align: middle;
@@ -176,7 +178,15 @@
 	margin-top: 5px;
 }
 
-
 .subheading-values {
 	font-style: italic;
+}
+
+.fix-menu{
+	background: white;
+	margin-top:-10vh;
+}
+
+.food-name {
+	
 }
