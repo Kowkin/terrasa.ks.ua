@@ -9,6 +9,7 @@
 	<!--	<link rel="stylesheet" href="css/bootstrap-flex.css">-->
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/modernizr.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="js/fakeLoader.min.js"></script>
 	<script>
@@ -29,15 +30,19 @@
 <body>
 	<div id="preLoader"></div>
 	<div class="section container-fluid">
-
-		<nav class="nav nav-inline text-xs-center light-nav">
-			<a class="nav-link active" href="#">главная</a>
-			<a class="nav-link" href="#">бронь</a>
-			<a class="nav-link big-menu" href="#">меню</a>
-			<a class="nav-link" href="#">о нас</a>
-			<a class="nav-link" href="#">контакты</a>
-		</nav>
-
+		<div class="row">
+			<nav class="col-sm-6 col-sm-offset-3 nav nav-flex light-nav cl-effect-4">
+				<a class="nav-link active" href="#">главная</a>
+				<img src="img/icons/Untitled-1_0000_flavored-cake.png" alt="">
+				<a class="nav-link" href="#">бронь</a>
+				<img src="img/icons/Untitled-1_0001_cake.png" alt="">
+				<a class="nav-link" href="#">меню</a>
+				<img src="img/icons/Untitled-1_0002_round-glass-2.png" alt="">
+				<a class="nav-link" href="#">о нас</a>
+				<img src="img/icons/Untitled-1_0003_cake-2.png" alt="">
+				<a class="nav-link" href="#">контакты</a>
+			</nav>
+		</div>
 		<h1 class="display-1 light text-uppercase logo  ">terrasa</h1>
 
 	</div>
@@ -113,7 +118,7 @@
 				<h6 class="subheading-values">полный комплекс услуг</h6> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</div>
 		</div>
 	</div>
-	
+
 	<div class="section5">
 		<div class="carousel-wrapper">
 			<a href="#carousel" role="button" data-slide="prev">
@@ -132,31 +137,177 @@
 			</div>
 			<div class="divider center-block"></div>
 			<!-- Wrapper for slides -->
-			<div class="carousel-inner container-fluid" role="listbox">
+			<div class="carousel-inner container" role="listbox">
 
 				<div class="carousel-item active">
-					<h6 class="subheading text-center">апператив</h6>
-					<div class="row">
+					<h6 class="subheading-menu text-center">апператив</h6>
+					<div class="row menu-position">
 						<div class="col-sm-6">
-							<h4 class="food-name text-uppercase">LOREM IPSUM DOLOR SIT</h4>
-							<span class="food-desc"></span>
-							<span class="price"></span>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+
 						</div>
-						<div class="col-sm-6"></div>
-					</div>
-				</div>
-				
-				<div class="carousel-item">
-					<h6 class="subheading text-center">первые блюда</h6>
-					<div class="row">
-						<div class="col-sm-6"></div>
-						<div class="col-sm-6"></div>
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+
+						</div>
 					</div>
 				</div>
 
+				<div class="carousel-item">
+					<h6 class="subheading-menu text-center">первые блюда</h6>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<h6 class="subheading-menu text-center">первые блюда</h6>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<h6 class="subheading-menu text-center">первые блюда</h6>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+							<div class="col-sm-8">
+								<h4 class="food-name  text-uppercase">LOREM IPSUM DOLOR SIT</h4>
+								<h6 class="food-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quae, facilis? Optio architecto, molestias facilis.<span class="food-price">89</span></p></h6>
+							</div>
+						</div>
+					</div>
+				</div>
 
 			</div>
 		</div>
+	</div>
+
+	<div class="section6">
+		<div class="row">
+			<div class="food_img"><img src="/img/terrasa-152.jpg" alt=""></div>
+			<div class="food_img"><img src="/img/terrasa-008.jpg" alt=""></div>
+			<div class="food_img"><img src="/img/terrasa-061.jpg" alt=""></div>
+			<div class="food_img"><img src="/img/terrasa-103.jpg" alt=""></div>
+			<div class="food_img"><img src="/img/terrasa-089.jpg" alt=""></div>
+			<div class="food_img"><img src="/img/terrasa-018.jpg" alt=""></div>
+		</div>
+
+	</div>
+	<div class="section7"></div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<h3 class="center-block display-3">TERRASA</h3></div>
+			<div class="row footer-flex">
+				<div class="footer-text">
+					<p>Украина г.Херсон </p>
+					<p>ул. Марии Мортус, 263</p>
+				</div>
+				<div class="footer-devider"></div>
+				<h1 class="center-vertical">ЗАКАЗАТЬ СТОЛ</h1>
+				<div class="footer-devider"></div>
+				<div class="footer-text"><p>0552 444-174</p><p>
+					LifeCell 093 780-31-51
+				</p></div>
+			</div>
+
+
+		</div>
+
+	</footer>
 
 </body>
 

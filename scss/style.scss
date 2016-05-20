@@ -59,6 +59,7 @@
 @import "utilities-responsive";
 
 @import "fakeloader";
+@import "menu-hover";
 .big-menu {
 	font-size: 1.7rem;
 	vertical-align: middle;
@@ -189,4 +190,75 @@
 
 .food-name {
 	
+}
+
+.subheading-menu {
+//	line-height: 1;
+}
+
+.food-desc {
+	line-height: 1;
+	font-size: 0.8rem;
+	font-style: italic;
+}
+
+.food-price {
+	font-size: 4rem;
+	align-self: flex-end;
+}
+
+.menu-flex {
+	display: flex;
+	flex-direction:column;
+}
+
+.nav-flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-position {
+	display:flex;
+	align-content: center;
+}
+
+.row {
+	img{
+		height: 41vh;
+	}
+}
+
+footer{
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	h3{
+		line-height: 0.8;
+	}
+	background: #d5e7f1;
+	color: white;
+}
+.footer-devider {
+	border-left: 4px solid white;
+	height: 70px;
+		margin-left: 25px;
+		margin-right: 25px;
+}
+
+.footer-text {
+	line-height: 0.1;
+	margin-top: 25px;
+	&:nth-child(1){
+		text-align: right;
+	}
+	&:nth-child(3){
+		text-align: left;
+	}
+	
+}
+
+.footer-flex {
+	display: flex;
+//	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
 }
