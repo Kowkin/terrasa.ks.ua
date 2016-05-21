@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'MinionPro-It';
+  src: url('MinionPro-It.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bodon72SCC';
+  src: url('Bodon72SCC.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro-Regular';
+  src: url('MinionPro-Regular.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MinionPro-SemiboldIt';
+  src: url('MinionPro-SemiboldIt.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.light-nav {
+	a {
+		color: antiquewhite;
+	}
+	padding-top: 5vh;
+}
+.nav-flex {
+	font-family: 'MinionPro-Regular';
+}
+.big-menu {
+	font-size: 1.7rem;
+	vertical-align: middle;
+	margin-top: -.5rem;
+}
+
+.subheading {
+	font-family: 'MinionPro-It';
+	margin-bottom: -25px;
+}
+
+.heading {
+	line-height: 1;
+	margin-top: -3px;
+	font-family: 'MinionPro-Regular';
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+.text-header {
+	@include center-block();
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'MinionPro-SemiboldIt';
+}
+
+.text-content {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 0.8rem;
+	font-family: 'MinionPro-Regular';
+}
+
+.text-content-light {
+	text-align: center;
+	line-height: 1.2;
+	font-size: 0.8rem;
+	color: antiquewhite;
+	margin-top: 5px;
+}
+
+.subheading-values {
+	font-style: italic;
+}
+
+
+.footer-text {
+	line-height: 0.1;
+	margin-top: 25px;
+	&:nth-child(1) {
+		text-align: right;
+	}
+	&:nth-child(3) {
+		text-align: left;
+	}
+}
+footer{
+	font-family: 'MinionPro-Regular';
+}
+.footer-logo{
+	font-family: 'Bodon72SCC';
+}
