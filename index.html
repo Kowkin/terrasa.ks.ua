@@ -29,21 +29,21 @@
 
 <body>
 	<div id="preLoader"></div>
-	<div class="section container-fluid fix-padding">
+	<div id="main" class="section container-fluid fix-padding">
 		<div class="row">
 			<nav class="col-sm-6 col-sm-offset-3 nav nav-flex light-nav cl-effect-4">
-				<a class="nav-link active" href="#">главная</a>
+				<a class="nav-link active" href="/index.html#main">главная</a>
 				<img src="img/icons/Untitled-1_0000_flavored-cake.png" alt="">
-				<a class="nav-link" href="#">бронь</a>
+				<a class="nav-link" href="/booking.html">бронь</a>
 				<img src="img/icons/Untitled-1_0001_cake.png" alt="">
-				<a class="nav-link" href="#">меню</a>
+				<a class="nav-link" href="#menu">меню</a>
 				<img src="img/icons/Untitled-1_0002_round-glass-2.png" alt="">
-				<a class="nav-link" href="#">о нас</a>
+				<a class="nav-link" href="#about">о нас</a>
 				<img src="img/icons/Untitled-1_0003_cake-2.png" alt="">
-				<a class="nav-link" href="#">контакты</a>
+				<a class="nav-link" href="#contacts">контакты</a>
 			</nav>
 		</div>
-		<h1 class="display-1 light text-uppercase logo  ">terrasa</h1>
+		<h1 class="display-1 light text-uppercase logo">terrasa</h1>
 
 	</div>
 
@@ -93,19 +93,19 @@
 
 	<div class="section3 bg container-fluid">
 		<div class="row">
-		<div class="col-sm-8 col-sm-push-2 container-offset">
-		<div class="row">
-			<div class="col-sm-4 col-sm-push-1 img_chef">
-			</div>
-			<div class="col-sm-6 col-sm-push-1 fix-dotted">
-				<div class="border-content">
-					<h6 class="text-header">наш шеф-повар</h6>
-					<div class="divider center-block"></div>
-					<div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</div>
+			<div class="col-sm-8 col-sm-push-2 container-offset">
+				<div class="row">
+					<div class="col-sm-4 col-sm-push-1 img_chef">
+					</div>
+					<div class="col-sm-6 col-sm-push-1 fix-dotted">
+						<div class="border-content">
+							<h6 class="text-header">наш шеф-повар</h6>
+							<div class="divider center-block"></div>
+							<div class="text-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea comLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			</div>
-		</div>
 		</div>
 	</div>
 
@@ -143,11 +143,18 @@
 				<h1 class="col-sm-4 col-sm-offset-4 heading display-1 text-center fix-menu">Меню</h1>
 			</div>
 			<div class="divider center-block"></div>
+			<div class="row">
+				<h6 class="subheading-menu text-center col-sm-6 col-sm-offset-3 ">
+					<a data-target="#carousel" data-slide-to="0">апператив</a>
+					<a data-target="#carousel" data-slide-to="1">горячее</a>
+					<a data-target="#carousel" data-slide-to="2">салаты</a>
+					<a data-target="#carousel" data-slide-to="3">алкоголь</a>
+			</h6>
+			</div>
+			
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner container" role="listbox">
-
 				<div class="carousel-item active">
-					<h6 class="subheading-menu text-center">апператив</h6>
 					<div class="row menu-position">
 						<div class="col-sm-6">
 							<div class="col-sm-8">
@@ -285,12 +292,54 @@
 	<div class="section6">
 		<div class="container-fluid fix-padding">
 			<div class="row">
-				<div class="food_img"><img src="/img/terrasa-152.jpg" alt=""></div>
-				<div class="food_img"><img src="/img/terrasa-008.jpg" alt=""></div>
-				<div class="food_img"><img src="/img/terrasa-061.jpg" alt=""></div>
-				<div class="food_img"><img src="/img/terrasa-103.jpg" alt=""></div>
-				<div class="food_img"><img src="/img/terrasa-089.jpg" alt=""></div>
-				<div class="food_img"><img src="/img/terrasa-018.jpg" alt=""></div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-152.jpg" alt="форель">
+						<figcaption>
+							<p>Форель</br>129 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-008.jpg" alt="форель">
+						<figcaption>
+							<p>Теплый салат</br>89 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-061.jpg" alt="Фуагра">
+						<figcaption>
+							<p>Фуагра</br>199 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-103.jpg" alt="Брауни">
+						<figcaption>
+							<p>Брауни</br>59 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-089.jpg" alt="Десерт">
+						<figcaption>
+							<p>Десерт</br>79 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="grid">
+					<figure class="food_img effect-apollo">
+						<img src="/img/terrasa-018.jpg" alt="Гребешки">
+						<figcaption>
+							<p>Гребешки</br>189 грн.</p>
+						</figcaption>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -310,7 +359,7 @@
 					<p>ул. Марии Мортус, 263</p>
 				</div>
 				<div class="footer-devider"></div>
-				<h1 class="center-vertical">ЗАКАЗАТЬ СТОЛ</h1>
+				<h1 class="center-vertical"><a>ЗАКАЗАТЬ СТОЛ</a></h1>
 				<div class="footer-devider"></div>
 				<div class="footer-text">
 					<p>0552 444-174</p>

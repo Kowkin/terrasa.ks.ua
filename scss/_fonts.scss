@@ -82,7 +82,15 @@
 .subheading-values {
 	font-style: italic;
 }
-
+.grid{
+	p{
+		color: #fff;
+		font-size: 1.5rem;
+	  -webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		font-family: 'MinionPro-It';
+	}
+}
 
 .footer-text {
 	line-height: 0.1;

@@ -1,4 +1,3 @@
-
 // Core variables and mixins
 @import "variables";
 @import "mixins";
@@ -48,14 +47,10 @@
 @import "menu-hover";
 @import "fonts";
 @import "responsive";
-
-
-
+@import "hover-img";
 html {
 	overflow-x: hidden;
 }
-
-
 
 .logo {
 	margin: 0 auto;
@@ -67,7 +62,7 @@ html {
 	//	or 
 	//	top:50%
 	//    left: 50%;
-	//    -webkit-transform: translateX(-50%) translateY(-50%);
+	//    -webkit-transform:translateX(-50%) translateY(-50%);
 	//    transform: translateX(-50%) translateY(-50%);
 }
 
@@ -88,7 +83,6 @@ html {
 	margin-bottom: 13px;
 	margin-top: 13px;
 }
-
 
 .border-content {
 	border: 2px dotted #d9d3e7;
@@ -135,14 +129,16 @@ html {
 	background: white;
 }
 
-
 .fix-menu {
 	background: white;
 	margin-top: -10vh;
 }
 
 .subheading-menu {
-	//	line-height: 1;
+	display: flex;
+	line-height: 1;
+	padding-bottom: 1rem;
+	justify-content: space-around;
 }
 
 .food-desc {
@@ -191,6 +187,15 @@ footer {
 	}
 	background: #bcd7e6;
 	color: white;
+	a {
+		text-decoration: none;
+		color: #fff;
+		&:hover {
+			text-decoration: none;
+			color: #daeef8;
+			cursor: pointer;
+		}
+	}
 }
 
 .footer-devider {
@@ -199,7 +204,6 @@ footer {
 	margin-left: 25px;
 	margin-right: 25px;
 }
-
 
 .footer-flex {
 	display: flex;
@@ -224,4 +228,36 @@ footer {
 .bg {
 	background: url(/img/bg.jpg) no-repeat center;
 	background-size: cover;
+}
+
+.section-booking {
+	background: url(/img/_MG_0723.jpg
+)100% 100% no-repeat;
+	background-size: cover;
+	height: 100vh;
+	.booking-vertical {
+		top: 50%;
+		left: 25%;
+		-webkit-transform: translateX(-50%) translateY(50%);
+		transform: translateX(-50%) translateY(50%);
+	}
+	.btn-booking {
+	width: 100%;
+		background: #aca2c5;
+}
+	#success {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: green;
+    display: none;
+}
+
+#error {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: red;
+    display: none;
+}
 }

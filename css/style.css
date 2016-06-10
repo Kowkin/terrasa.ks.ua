@@ -6779,6 +6779,14 @@ nav a:focus {
   font-style: italic;
 }
 
+.grid p {
+  color: #fff;
+  font-size: 1.5rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family: 'MinionPro-It';
+}
+
 .footer-text {
   line-height: 0.1;
   margin-top: 25px;
@@ -6807,6 +6815,100 @@ footer {
   .img_zakaz {
     height: 35rem !important;
   }
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  height: auto;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+figure.effect-apollo {
+  background: #3498db;
+}
+
+figure.effect-apollo img {
+  opacity: 0.95;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale3d(1.05, 1.05, 1);
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+figure.effect-apollo figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  content: '';
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -100%, 0);
+}
+
+figure.effect-apollo p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em;
+  padding: 0 1em;
+  max-width: 150px;
+  border-right: 4px solid #fff;
+  text-align: right;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-apollo h2 {
+  text-align: left;
+}
+
+figure.effect-apollo:hover img {
+  opacity: 0.6;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+  -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+  transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 100%, 0);
+}
+
+figure.effect-apollo:hover p {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
 
 html {
@@ -6886,6 +6988,13 @@ html {
   margin-top: -10vh;
 }
 
+.subheading-menu {
+  display: flex;
+  line-height: 1;
+  padding-bottom: 1rem;
+  justify-content: space-around;
+}
+
 .food-desc {
   line-height: 1;
   font-size: 0.8rem;
@@ -6934,6 +7043,17 @@ footer h3 {
   line-height: 0.8;
 }
 
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #daeef8;
+  cursor: pointer;
+}
+
 .footer-devider {
   border-left: 4px solid white;
   height: 70px;
@@ -6964,4 +7084,38 @@ footer h3 {
 .bg {
   background: url(/img/bg.jpg) no-repeat center;
   background-size: cover;
+}
+
+.section-booking {
+  background: url(/img/_MG_0723.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.section-booking .booking-vertical {
+  top: 50%;
+  left: 25%;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}
+
+.section-booking .btn-booking {
+  width: 100%;
+  background: #aca2c5;
+}
+
+.section-booking #success {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: green;
+  display: none;
+}
+
+.section-booking #error {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: red;
+  display: none;
 }

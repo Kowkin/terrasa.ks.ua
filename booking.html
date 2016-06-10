@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Ресторан Terrasa</title>
+	<!--	<link rel="stylesheet" href="css/bootstrap-flex.css">-->
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/fakeLoader.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("#preLoader").fakeLoader({
+				timeToHide: 1000, //Time in milliseconds for fakeLoader disappear
+				zIndex: "999", //Default zIndex
+				spinner: "spinner6", //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+				bgColor: "#6d6aa1", //Hex, RGB or RGBA colors
+			});
+			$('.carousel').carousel({
+				interval: false
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div id="preLoader"></div>
+	<div class="section-booking
+	 container-fluid fix-padding">
+		<div class="row">
+			<nav class="col-sm-6 col-sm-offset-3 nav nav-flex light-nav cl-effect-4">
+				<a class="nav-link active" href="/index.html">главная</a>
+				<img src="img/icons/Untitled-1_0000_flavored-cake.png" alt="">
+				<a class="nav-link" href="/book.html">бронь</a>
+				<img src="img/icons/Untitled-1_0001_cake.png" alt="">
+				<a class="nav-link" href="#">меню</a>
+				<img src="img/icons/Untitled-1_0002_round-glass-2.png" alt="">
+				<a class="nav-link" href="#">о нас</a>
+				<img src="img/icons/Untitled-1_0003_cake-2.png" alt="">
+				<a class="nav-link" href="#">контакты</a>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 booking-vertical">
+				<form role="form" id="contact_form">
+					<div class="form-group">
+						<input type="text" class="form-control" id="name" name="name" placeholder="Имя*" required/>
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="number" name="number" placeholder="Номер*" />
+					</div>
+<!--
+					<div class="form-group">
+						<input type="time" class="form-control" id="time" name="time" placeholder="Date*" required/>
+					</div>
+-->
+					<div class="form-group hidden-xs">
+						<textarea class="form-control" id="message" name="message" rows="5" placeholder="В сообщении укажите пожалуйста ваши пожелания, дату и время желаемой брони" required></textarea>
+					</div>
+						<button id="button-send" class="btn btn-booking">
+							Заказать
+						</button>
+						<div id="success">
+							Ваш заказ принят. Мы свяжемся с вами в скором времени.
+						</div>
+						<div id="error">
+							Уп-с, попробуйте еще раз.
+						</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
