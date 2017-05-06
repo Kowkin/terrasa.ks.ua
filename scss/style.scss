@@ -1,53 +1,54 @@
+/*!
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2016 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/ blob/master/LICENSE)
+ */
 // Core variables and mixins
 @import "variables";
 @import "mixins";
 // Reset and dependencies
-@import "normalize";
-@import "print";
+@import " normalize";
+@import " print";
+@import " glyphicons";
 // Core CSS
-@import "reboot";
-@import "type";
-@import "images";
-@import "code";
-@import "grid";
-@import "tables";
-@import "forms";
-@import "buttons";
+@import " scaffolding";
+@import " type";
+@import " code";
+@import " grid";
+@import " tables";
+@import " forms";
+@import " buttons";
 // Components
-@import "animation";
-@import "dropdown";
-@import "button-group";
-@import "input-group";
-@import "custom-forms";
-@import "nav";
-@import "navbar";
-@import "card";
-@import "breadcrumb";
-@import "pagination";
-@import "pager";
-@import "labels";
-@import "jumbotron";
-@import "alert";
-@import "progress";
-@import "media";
-@import "list-group";
-@import "responsive-embed";
-@import "close";
+@import " component-animations";
+@import " dropdowns";
+@import " button-groups";
+@import " input-groups";
+@import " navs";
+@import " navbar";
+@import " breadcrumbs";
+@import " pagination";
+@import " pager";
+@import " labels";
+@import " badges";
+@import " jumbotron";
+@import " thumbnails";
+@import " alerts";
+@import " progress-bars";
+@import " media";
+@import " list-group";
+@import " panels";
+@import " responsive-embed";
+@import " wells";
+@import " close";
 // Components w/ JavaScript
-@import "modal";
-@import "tooltip";
-@import "popover";
-@import "carousel";
+@import " modals";
+@import " tooltip";
+@import " popovers";
+@import " carousel";
 // Utility classes
-@import "utilities";
-@import "utilities-background";
-@import "utilities-spacing";
-@import "utilities-responsive";
-@import "fakeloader";
-@import "menu-hover";
-@import "fonts";
-@import "responsive";
-@import "hover-img";
+@import " utilities";
+@import " responsive-utilities";
+
 html {
 	overflow-x: hidden;
 }
@@ -59,7 +60,7 @@ html {
 	position: absolute;
 	top: 40vh;
 	font-family: 'Bodon72SCC';
-	//	or 
+	//	or
 	//	top:50%
 	//    left: 50%;
 	//    -webkit-transform:translateX(-50%) translateY(-50%);
@@ -92,7 +93,7 @@ html {
 }
 
 .img_zakaz {
-	background: url(/img/_MG_0723.jpg) no-repeat;
+	background: url("/img/_MG_0723.jpg") no-repeat;
 	background-size: cover;
 	height: 21rem;
 }
@@ -113,7 +114,7 @@ html {
 
 .section3 {
 	.img_chef {
-		background: url(/img/_MG_0723.jpg) no-repeat;
+		background: url("/img/_MG_0723.jpg") no-repeat;
 		background-size: cover;
 		height: 21rem;
 	}
@@ -170,26 +171,30 @@ html {
 .row {
 	.food_img {
 		height: 45vh;
-		width: 33.19vw;
+		width: 33.3vw;
 		margin: 0;
 		padding: 0;
 	}
+
 	img {
 		height: 100%;
 	}
 }
 
 footer {
-	padding-top: 5vh;
-	padding-bottom: 5vh;
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+
 	h3 {
 		line-height: 0.8;
 	}
 	background: #bcd7e6;
 	color: white;
+
 	a {
 		text-decoration: none;
 		color: #fff;
+
 		&:hover {
 			text-decoration: none;
 			color: #daeef8;
@@ -223,41 +228,73 @@ footer {
 .container-offset {
 	margin-top: -10vh;
 	margin-bottom: -10vh;
+	z-index: 99999;
 }
 
 .bg {
-	background: url(/img/bg.jpg) no-repeat center;
+	background: url("/img/bg.jpg") no-repeat center;
 	background-size: cover;
 }
 
 .section-booking {
-	background: url(/img/_MG_0723.jpg
-)100% 100% no-repeat;
+	background: url(/img/_MG_0723.jpg )100% 100% no-repeat;
 	background-size: cover;
 	height: 100vh;
+
 	.booking-vertical {
 		top: 50%;
 		left: 25%;
 		-webkit-transform: translateX(-50%) translateY(50%);
 		transform: translateX(-50%) translateY(50%);
 	}
+
 	.btn-booking {
-	width: 100%;
+		width: 100%;
 		background: #aca2c5;
-}
+	}
+
 	#success {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: green;
-    display: none;
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		color: green;
+		display: none;
+	}
+
+	#error {
+		width: 100%;
+		padding: 10px;
+		text-align: center;
+		color: red;
+		display: none;
+	}
 }
 
-#error {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    color: red;
-    display: none;
+.fix-popular {
+	z-index: 99999;
+	color: red;
 }
+
+.bg-fix {
+	height: 75px;
+}
+
+.fix-border-content {
+	border: 2px dotted #d9d3e7;
+	padding: 20px !important;
+	height: auto;
+	margin: 1rem;
+}
+
+.fix-container-fluid {
+	height: 0px!important;
+}
+
+.fix-h2 {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.fix-footer-vertical {
+	margin-top: 15xpx;
 }
